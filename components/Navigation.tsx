@@ -1,9 +1,12 @@
 import React from "react";
+import styles from "./Navigation.module.css";
 
-export default function Navigation() {
+export default function Navigation({ isHomePage = false }) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div
+        className={`max-w-7xl mx-auto px-6 py-6 flex items-center justify-between ${isHomePage ? styles.fadeIn : ""}`}
+      >
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-full border-2 border-amber-600/80 flex items-center justify-center">
             <span className="text-amber-600 font-serif text-lg">50</span>
