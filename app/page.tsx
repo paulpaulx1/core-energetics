@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import What from "@/components/What";
+import How from "@/components/How";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navigation isHomePage={true} />
       <Hero />
       <What />
+      <How />
     </main>
   );
 }

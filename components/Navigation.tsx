@@ -23,24 +23,8 @@ export default function Navigation({ isHomePage = false }) {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8 text-sm tracking-wide">
-          <a href="#what" className="hover:text-amber-600/80 transition-colors">
-            What We Do
-          </a>
-          <a
-            href="#training"
-            className="hover:text-amber-600/80 transition-colors"
-          >
-            Training
-          </a>
-          <a
-            href="#practitioners"
-            className="hover:text-amber-600/80 transition-colors"
-          >
-            Find a Practitioner
-          </a>
 
-          {/* About Dropdown */}
+        <div className="hidden md:flex items-center gap-8 text-sm tracking-wide">
           <div
             className="relative"
             onMouseEnter={() => setAboutDropdownOpen(true)}
@@ -51,7 +35,7 @@ export default function Navigation({ isHomePage = false }) {
             </button>
 
             {aboutDropdownOpen && (
-              <div className="absolute top-full right-0 mt-2 w-64 bg-black/80 backdrop-blur-md rounded-sm shadow-xl py-2">
+              <div className="absolute top-full left-0 mt-2 w-64 bg-black/80 backdrop-blur-md rounded-sm shadow-xl py-2">
                 <a
                   href="#who-we-are"
                   className="block px-6 py-3 hover:bg-white/10 transition-colors uppercase text-xs tracking-wider"
@@ -85,6 +69,27 @@ export default function Navigation({ isHomePage = false }) {
               </div>
             )}
           </div>
+          <a href="#what" className="hover:text-amber-600/80 transition-colors">
+            What We Do
+          </a>
+          <a
+            href="#training"
+            className="hover:text-amber-600/80 transition-colors"
+          >
+            Training
+          </a>
+          <a
+            href="#practitioners"
+            className="hover:text-amber-600/80 transition-colors"
+          >
+            Find a Practitioner
+          </a>
+
+          {/* About Dropdown */}
+
+          <a href="#give" className="hover:text-amber-600/80 transition-colors">
+            Give
+          </a>
         </div>
 
         {/* Mobile Hamburger */}
@@ -126,6 +131,12 @@ export default function Navigation({ isHomePage = false }) {
               className="block py-2 hover:text-amber-600/80 transition-colors"
             >
               Find a Practitioner
+            </a>
+            <a
+              href="#give"
+              className="block py-2 hover:text-amber-600/80 transition-colors"
+            >
+              Give
             </a>
             <div className="border-t border-white/20 pt-4 space-y-2">
               <div className="text-amber-600/80 text-xs font-semibold mb-2">

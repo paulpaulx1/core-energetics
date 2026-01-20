@@ -32,18 +32,18 @@ export default function What() {
     <section
       ref={sectionRef}
       id="what"
-      className="bg-stone-100 py-24 px-24 md:px-12"
+      className="bg-stone-100 py-24 px-8 md:px-12"
     >
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-20 items-start">
+        <div className="grid md:grid-cols-2 gap-20 items-center">
           {/* Left Column - Question/Hook */}
           <div className={isVisible ? styles.leftColumn : ""}>
-            <h2 className="font-serif text-5xl md:text-6xl text-stone-900 mb-8 leading-tight">
+            <h2 className="font-serif text-5xl md:text-6xl text-stone-900 mb-8 leading-tight text-center">
               What is Core Energetics?
             </h2>
             <img
-              src="/emerging_plant.jpg"
-              alt="Yellow flowers emerging through concrete cracks"
+              src="/energy_circle.png"
+              alt="People standing in a concentric circle holding hands"
               className="w-full h-auto"
             />
           </div>
