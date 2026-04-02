@@ -17,8 +17,8 @@ export default function Navigation({ isHomePage = false }) {
             <span className="text-amber-600 font-serif text-lg">50</span>
           </div>
           <div className="text-sm">
-            <div className="font-light tracking-wider">INSTITUTE OF</div>
-            <div className="font-semibold tracking-wide">CORE ENERGETICS</div>
+            <div className="font-light tracking-wider">VANTHORPE</div>
+            <div className="font-semibold tracking-wide">INSTITUTE</div>
           </div>
         </div>
 

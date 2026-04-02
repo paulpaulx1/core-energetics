@@ -20,7 +20,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto font-light leading-relaxed text-stone-200">
-            Core Energetics is a body-centered psychotherapy that integrates 
+            Vanthorpe Institute is a body-centered psychotherapy that integrates 
             verbal therapy, breathwork, and physical expression to help you move 
             through trauma and reconnect with your authentic self.
           </p>
